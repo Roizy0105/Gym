@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root{
+  --primary-Color: #EE2A48;
+  --main-White: #fff;
+  --main-Black: #222;
+  --main-green: #39EA7C;
+  --main-Spacing: 0.1rem;
+  --main-Transition: all 0.5s liner;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  color: var(--main-Black);
+  background: var(--main-White);
+  font-family: "Lato", sans-serif;
+}
+/*----------------------Navbar------------------------*/
+.navbar{
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgb(250,128,114);
+  z-index: 1;
+}
+.navbar-center{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding 0 1.5rem;
+}
+.nav-icon{
+  font-size: 2rem;
+}
+.navbar-icon{
+  font-size: 3rem;
+}
+.cart-btn{
+  position: relative;
+  cursor: pointer;
+}
+.cart-items{
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  color: rgb(250,128,114);
+}
+.dumbbell{
+  color: #00ff00;
+  font-size: 3rem;
+}
+.fitnlean{
+  text-transform: uppercase;
+  color: #00ff00;
+  font-size: 1rem;
+  letter-spacing: .5rem;
+  margin-left: 2rem;
+}
+.dumbbellspan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/******************end of navbar*******************/
+/**********************hero***************/
+ .hero{
+   /*padding: 10rem; 0;*/
+   position: relative;
+   min-height: calc(100vh - 60px);
+   background: center/cover no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .video-container{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ video{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ .banner{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+   background: rgba(250,128,114 .4);
+   display: inline-block;
+   padding: 2rem;
+   }
+
+   .banner-title{
+     font-size: 3.4rem;
+     text-transform: uppercase;
+     letter-spacing: var(--main-Spacing);
+     margin-bottom: 3rem;
+   }
+   .banner-btn{
+     padding: 1rem 3rem;
+     text-transform: uppercase;
+     letter-spacing: 1rem;
+     font-size: 1rem;
+     background: rgb(250,128,114);
+     color: var(--main-Black);
+     border: 1px solid rgb(250,128,114);
+     transition: var(--main-Transition);
+     cursor: pointer;
+   }
+   .banner-btn:hover{
+     background: transparent;
+     color: rgb(250,128,114);
+   }
